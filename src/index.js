@@ -1,12 +1,12 @@
-const express  = require('express');
-const cors = require('cors');
+const express  = require('express')
+const cors = require('cors')
 
-const app = express();
+const app = express()
 
-const server = require('http').Server(app);
+const server = require('http').Server(app)
 
-app.use(cors());
+app.use(cors())
 
-app.use(require('./routes'));
+app.use(require('./routes'))
 
-server.listen(3333);
+server.listen(3333)
