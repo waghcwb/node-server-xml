@@ -7,6 +7,6 @@ module.exports = {
     res.send(Xml)
   },
   xmlToJson(req, res) {
-    res.send(parser.toJson(Xml))
+    res.send(parser.xml2json(Xml, { compact: true, spaces: 4 }))
   }
 }
